@@ -1,0 +1,588 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Piilotetaan oletuksena molemmat */
+.mobile,
+.desktop {
+  display: none;
+}
+
+/* 📱 Mobile (alle 768px) */
+@media (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+}
+
+/* 🖥️ Desktop / Monitor (768px ja yli) */
+@media (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+}
+
+
+
+
+/*header*/
+
+header{
+     align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+
+.logo{
+    margin-left: -1000px;
+    margin-top: 15px;
+    position: absolute;
+    width: 12%;
+    height: auto;
+}
+
+.navbar{
+    margin-left: -550px;
+    position: absolute;
+}
+
+.navbar a{
+    font-weight: bold;
+     font-family: 'Italiana', serif;
+    font-size: 22px;
+    padding-left: 75px;
+    color: white;
+    text-decoration: none;
+     cursor: pointer;
+    transition: transform 0.9s ease; 
+}
+
+.navbar a:active{
+     transform: translateY(-4px);
+}
+
+ .headerteksti{
+    font-weight: bold;
+     font-family: 'Italiana', serif;
+    margin-left: 800px;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+}
+
+/*section1*/
+
+.section1{
+    margin-top: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    background-size: cover;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.herokuva{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+}
+
+.hero-menu-btn{
+    left: 100px;
+    margin-top: 50px;
+    font-family:'Anton', sans-serif;;
+    color: white;
+    font-size: 22px;
+    border: white solid 5px;
+    border-radius: 20px;
+    background-color: #F9A41A;
+    position: absolute;
+    height: 50px;
+    width: 8%;
+}
+
+.hero-menu-btn:hover{
+    cursor: pointer;
+     transform: translateY(-2px);
+     transition: transform 0.5s ease; 
+}
+
+.hero-yhteystiedot-btn{
+    left: 255px;
+    margin-top: 50px;
+    font-family:'Anton', sans-serif;;
+    color: white;
+    font-size: 22px;
+    border: white solid 5px;
+    border-radius: 20px;
+    background: none;
+    position: absolute;
+    height: 50px;
+    width: 10%;
+}
+
+.hero-yhteystiedot-btn:hover{
+    cursor: pointer;
+     transform: translateY(-2px);
+     transition: transform 0.5s ease; 
+}
+
+/*Arvostelut*/
+
+.arvostelu-osa {
+    margin-top: 550px;
+    position: absolute;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.otsikko {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #b22222;
+}
+
+.arvostelu-osa div {
+    width: 300px;
+    padding: 25px;
+    margin: 20px;
+    display: inline-block;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+
+.asiakas {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.laatikko1 {
+    background: linear-gradient(135deg, #ff4d4d, #b22222);
+    color: white;
+    box-shadow: 0 6px 15px rgba(178, 34, 34, 0.4);
+}
+
+.laatikko1:hover {
+    transform: scale(1.05);
+}
+
+.laatikko2 {
+    background: linear-gradient(135deg, #4CAF50, #1e7e34);
+    color: white;
+    box-shadow: 0 6px 15px rgba(30, 126, 52, 0.4);
+}
+
+.laatikko2:hover {
+    transform: rotate(-2deg) scale(1.05);
+}
+
+
+.laatikko3 {
+    background-color: white;
+    color: #333;
+    border: 2px solid #b22222;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.laatikko3:hover {
+    background-color: #fff0f0;
+    transform: translateY(-8px);
+}
+
+
+
+
+
+
+
+
+
+
+/*SECTION2*/
+
+.section2{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #3A1F1F;
+    width: 100%;
+    height: 1100px;
+}
+
+.section2 h2{
+    position: absolute;
+    left: 150px;
+    margin-top: -800px;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+     font-family: "Archivo Black", sans-serif;
+}
+
+.kuvaus{
+    left: 150px;
+    margin-top: -450px;
+    position: absolute;
+    font-size: 25px;
+    color: white;
+    max-width: 40%;
+}
+
+.pizzeria-img{
+    margin-left: 600px;
+    margin-top: -175px;
+    border-radius: 18px;
+    width: 30%;
+    height: 500px;
+    position: absolute;
+}
+
+.aukioloajat{
+    left: 150px;
+    margin-top: 450px;
+    position: absolute;
+    border-radius: 20px;
+    border: 10px white solid;
+    background: none;
+    width: 25%;
+    height: 500px;
+}
+
+.teksti1{
+    padding: 20px 20px;
+     font-family: "Archivo Black", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.a{
+    font-size: 20px;
+    color: white;
+     font-family: "Archivo Black", sans-serif;
+     padding: 10px 20px;
+}
+
+.b{
+    font-size: 20px;
+    color: white;
+     font-family: "Archivo Black", sans-serif;
+     padding: 10px 20px;
+}
+
+.c{
+    font-size: 20px;
+    color: white;
+     font-family: "Archivo Black", sans-serif;
+     padding: 10px 20px;
+}
+
+.osoite{
+    margin-left: 500px;
+    margin-top: 500px;
+    position: absolute;
+    font-family: "Archivo Black", sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+.numero{
+     margin-left: 500px;
+    margin-top: 650px;
+    position: absolute;
+    font-family: "Archivo Black", sans-serif;
+    color: white;
+    font-size: 25px;
+}
+
+.some{
+    margin-left: 500px;
+    margin-top: 850px;
+    position: absolute;
+    width: 15%;
+    height: 100px;
+}
+
+
+
+
+
+/*MOBILEVERSIO*/
+/**************/
+/**************/
+
+/*header*/
+
+.header-mobile{
+     align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+
+.logo-mobile{
+    left: 20px;
+    position: absolute;
+    width: 35%;
+    height: auto;
+}
+
+.navbar-mobile{
+    left: 130px;
+    position: absolute;
+}
+
+.navbar-mobile a{
+    font-weight: bold;
+     font-family: 'Italiana', serif;
+    font-size: 22px;
+    padding-left: 40px;
+    color: white;
+    text-decoration: none;
+     cursor: pointer;
+    transition: transform 0.9s ease; 
+}
+
+.navbar-mobile a:active{
+     transform: translateY(-4px);
+}
+
+
+
+/*section1*/
+
+.section1-mobile{
+    background-size: cover;
+    margin-top: -1px;
+    background-image: url(herokuva-mobile.png);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-menu-btn-mobile{
+    left: 30px;
+    margin-top: 250px;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    border: 5px white solid;
+    border-radius: 20px;
+    background-color: #F9A41A;
+    position: absolute;
+    height: 50px;
+    width: 25%;
+     font-family:'Anton', sans-serif;;
+}
+
+.hero-yhteystiedot-btn-mobile{
+    left: 150px;
+    margin-top: 250px;
+    border-radius: 20px;
+    position: absolute;
+    height: 50px;
+    width: 40%;
+    background: none;
+    border: white 5px solid;
+     font-size: 22px;
+    font-weight: bold;
+    font-family:'Anton', sans-serif;
+    color: white;
+}
+
+/* Section container */
+.arvostelu-section-mobile {
+    margin-top: -1px;
+    padding: 20px;
+    background-color: #3A1F1F;
+}
+
+/* Otsikko */
+.otsikko-mobile {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+     font-family: "Archivo Black", sans-serif;
+}
+
+/* Arvostelulaatikot scrollattavassa rivissä */
+.arvostelu-osa-mobile {
+    display: flex;
+    overflow-x: auto;        /* Vaakasuuntainen scrollaus */
+    gap: 15px;               /* Väli laatikoiden välissä */
+    padding-bottom: 10px;
+}
+
+/* Poistetaan scrollin ulkonäkö tarvittaessa (vain tyyliseikka) */
+.arvostelu-osa-mobile::-webkit-scrollbar {
+    height: 8px;
+}
+.arvostelu-osa-mobile::-webkit-scrollbar-thumb {
+    background-color: #b22222;
+    border-radius: 4px;
+}
+
+/* Yksittäiset arvostelulaatikot */
+.arvostelu-osa-mobile div {
+    flex: 0 0 auto;         /* Estää kutistumisen, säilyttää leveyden */
+    width: 250px;            /* Ei liian leveitä */
+    padding: 20px;
+    border-radius: 15px;     /* Pyöreät kulmat */
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+/* Laatikko 1 */
+.laatikko1-mobile {
+    background: linear-gradient(135deg, #ff4d4d, #b22222);
+    color: white;
+    box-shadow: 0 6px 15px rgba(178, 34, 34, 0.4);
+}
+
+
+
+/* Laatikko 2 */
+.laatikko2-mobile {
+    background: linear-gradient(135deg, #4CAF50, #1e7e34);
+    color: white;
+    box-shadow: 0 6px 15px rgba(30, 126, 52, 0.4);
+}
+
+
+
+/* Laatikko 3 */
+.laatikko3-mobile {
+    background-color: white;
+    color: #333;
+    border: 2px solid #b22222;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+
+/* Asiakas-nimi */
+.asiakas-mobile {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Arvosteluteksti */
+.arvostelu-teksti-mobile {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.section2-mobile{
+    width: 100%;
+    height: 1500px;
+    background-color: #3A1F1F;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.h2-mobile{
+     font-family: "Archivo Black", sans-serif;
+    position: absolute;
+    color: white;
+    font-weight: bold;
+    margin-top: -1300px;
+}
+
+.kuvaus-mobile{
+    margin-top: -1000px;
+    max-width: 85%;
+    font-size: 15px;
+    position: absolute;
+    color: white;
+     font-family: "Archivo Black", sans-serif;
+      font-weight: bold;
+}
+
+.ravintola-pic-mobile{
+    margin-top: -300px;
+    position: absolute;
+    width: 90%;
+    border-radius: 20px;
+    height: auto;
+}
+
+.aukioloajat-mobile{
+    position: absolute;
+    margin-top: 550px;
+    height: 400px;
+    width: 85%;
+    background: none;
+    border: 10px solid white;
+    border-radius: 20px;
+}
+
+.a-mobile{
+    font-size: 20px;
+    color: white;
+     font-family: "Archivo Black", sans-serif;
+     padding: 10px 20px;
+}
+
+.b-mobile{
+    font-size: 20px;
+    color: white;
+     font-family: "Archivo Black", sans-serif;
+     padding: 10px 20px;
+}
+
+.c-mobile{
+    font-size: 20px;
+    color: white;
+     font-family: "Archivo Black", sans-serif;
+     padding: 10px 20px;
+}
+
+.osoite-mobile{
+    left: 30px;
+    margin-top: 1100px;
+    font-family: "Archivo Black", sans-serif;
+    position: absolute;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.puhelinnumero-mobile{
+     left: 120px;
+    margin-top: 1250px;
+     font-family: 'Italiana', serif;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.some-png{
+    margin-top: 1400px;
+    position: absolute;
+    height: auto;
+    width: 30%;
+}
+
+
+
+
+
+
+
+
+
