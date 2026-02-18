@@ -1,0 +1,493 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Piilotetaan oletuksena molemmat */
+.mobile,
+.desktop {
+  display: none;
+}
+
+/* 📱 Mobile (alle 768px) */
+@media (max-width: 767px) {
+  .mobile {
+    display: block;
+  }
+}
+
+/* 🖥️ Desktop / Monitor (768px ja yli) */
+@media (min-width: 768px) {
+  .desktop {
+    display: block;
+  }
+}
+
+/*header*/
+
+header{
+     align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+
+.logo{
+    margin-left: -1000px;
+    margin-top: 15px;
+    position: absolute;
+    width: 12%;
+    height: auto;
+}
+
+.navbar{
+    margin-left: -550px;
+    position: absolute;
+}
+
+.navbar a{
+    font-weight: bold;
+     font-family: 'Italiana', serif;
+    font-size: 22px;
+    padding-left: 75px;
+    color: white;
+    text-decoration: none;
+     cursor: pointer;
+    transition: transform 0.9s ease; 
+}
+
+.navbar a:active{
+     transform: translateY(-4px);
+}
+
+ .headerteksti{
+    font-weight: bold;
+     font-family: 'Italiana', serif;
+    margin-left: 800px;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+}
+
+/*section1*/
+
+.section1{
+  background-size: cover;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: #3A1F1F;
+    height: 2000px;
+    width: 100%;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-width: 600px;
+}
+
+.menu .category-pizza {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 20px 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ff6f3c;
+  color: #ff6f3c;
+}
+
+.menu .category-kebab {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 20px 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ff6f3c;
+  color: #ff6f3c;
+}
+
+.menu .category-juomat {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 20px 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ff6f3c;
+  color: #ff6f3c;
+}
+
+.menu .category-salaatti {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin: 20px 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #ff6f3c;
+  color: #ff6f3c;
+}
+
+.menu li {
+  background-color: #fff2e6;
+  margin: 8px 0;
+  padding: 12px 16px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu li span {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.menu li:hover {
+  background-color: #ffd6b3;
+  transform: translateX(5px);
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.pizzat{
+    position: absolute;
+    margin-top: -950px;
+    margin-left: -500px;
+    max-width: 70%;
+}
+
+.kebabit{
+    margin-left: -500px;
+    position: absolute;
+    margin-top: -200px;
+    max-width: 30%;
+}
+
+.salaatit{
+    margin-left: 1px;
+    margin-top: -200px;
+    max-width: 40%;
+     position: absolute;
+}
+
+.juomat{
+    margin-left: -500px;
+    margin-top: 200px;
+    max-width: 30%;
+     position: absolute;
+}
+
+.pizzakuva{
+  margin-top: -920px;
+  position: absolute;
+  height: 400px;
+  width: 30%;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.pizza-text{
+  min-width: 30%;
+  margin-top: -480px;
+  max-width: 20%;
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.salaatti-text{
+  margin-left: 20px;
+    min-width: 30%;
+  margin-top: 50px;
+  max-width: 20%;
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.wolt-text{
+  margin-top: 300px;
+  position: absolute;
+  font-size: 30px;
+  color: white;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.wolt-button {
+  margin-left: 50px;
+  margin-top: 400px;
+  position: absolute;
+  font-family: "Archivo Black", sans-serif;
+  border-radius: 50px;
+    display: inline-block;
+    padding: 14px 100px;
+    background-color: #00C2E8;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+.wolt-button:hover {
+    background-color: #009ec0;
+    transform: scale(1.05);
+}
+
+.puhelinnumero-menu-text{
+  margin-left: 125px;
+  margin-top: 500px;
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Italiana', serif;
+}
+
+
+/***************/
+/*MOBIILIVERSIO*/
+/***************/
+
+/*header*/
+
+.header-mobile{
+     align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 150px;
+}
+
+.logo-mobile{
+    left: 20px;
+    position: absolute;
+    width: 35%;
+    height: auto;
+}
+
+.navbar-mobile{
+    left: 130px;
+    position: absolute;
+}
+
+.navbar-mobile a{
+    font-weight: bold;
+     font-family: 'Italiana', serif;
+    font-size: 22px;
+    padding-left: 40px;
+    color: white;
+    text-decoration: none;
+     cursor: pointer;
+    transition: transform 0.9s ease; 
+}
+
+.navbar-mobile a:active{
+     transform: translateY(-4px);
+}
+
+/*section1-mobile*/
+
+.section1-mobile{
+  height: 3500px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3A1F1F;
+}
+
+.menu-text-mobile{
+  top: 200px;
+   font-family: "Archivo Black", sans-serif;
+  position: absolute;
+  color: white;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+/* ===== MENU MOBILE ===== */
+
+.menu-mobile {
+  list-style: none;
+  padding: 15px;
+  margin: 0;
+  width: 100%;
+}
+
+/* ===== KATEGORIAT ===== */
+
+.category-pizza-mobile {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 25px 0 10px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #ff6f3c;
+  color: #ff6f3c;
+}
+
+.category-kebab-mobile {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 25px 0 10px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #ff6f3c;
+  color: #ff6f3c;
+}
+
+.category-juomat-mobile {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 25px 0 10px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #ff6f3c;
+  color: #ff6f3c;
+}
+
+.category-salaatti-mobile {
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 25px 0 10px 0;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #ff6f3c;
+  color: #ff6f3c;
+}
+
+/* ===== MENU ITEM ===== */
+
+.menu-mobile li {
+  background-color: #fff2e6;
+  margin: 10px 0;
+  padding: 14px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-mobile li span {
+  font-size: 0.85em;
+  color: #555;
+}
+
+/* ===== OSIOT ===== */
+
+.pizzat-mobile {
+  top: 270px;
+  position: absolute;
+  width: 90%;
+  left: 20px;
+}
+
+.kebabit-mobile {
+  position: absolute;
+  top: 1750px;
+  width: 90%;
+  left: 20px;
+}
+
+.salaatit-mobile {
+  top: 2200px;
+  position: absolute;
+  width: 90%;
+  left: 20px;
+}
+
+.juomat-mobile {
+  top: 2720px;
+  position: absolute;
+  width: 90%;
+  left: 20px;
+}
+
+/* ===== KUVAT ===== */
+
+.pizzakuva-mobile {
+  left: 10px;
+  top: 1150px;
+  position: absolute;
+  width: 95%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+}
+
+/* ===== TEKSTIT ===== */
+
+.pizza-text-mobile {
+  top: 1480px;
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  left: 10px;
+}
+
+.salaatti-text-mobile {
+  top: 2520px;
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  left: 5px;
+}
+
+.wolt-text-mobile {
+  left: 40px;
+  font-size: 20px;
+  color: white;
+  font-weight: bold;
+  font-family: "Archivo Black", sans-serif;
+  text-align: center;
+  position: absolute;
+  top: 3300px;
+}
+
+/* ===== WOLT BUTTON ===== */
+
+.wolt-button-mobile {
+   font-family: "Archivo Black", sans-serif;
+  top: 3350px;
+  position: absolute;
+  display: block;
+  width: 80%;
+  text-align: center;
+  padding: 16px;
+  background-color: #00C2E8;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 12px;
+  left: 20px;
+  transition: 0.3s ease;
+}
+
+.wolt-button-mobile:active {
+  transform: scale(0.98);
+}
+
+/* ===== PUHELINNUMERO ===== */
+
+.puhelinnumero-menu-text-mobile {
+  top: 3450px;
+  position: absolute;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  font-family: 'Italiana', serif;
+  left: 120px;
+}
+
